@@ -40,10 +40,14 @@ git remote -v查看远程库信息 git push origin master推送master分支到�
 
 git checkout -- <file>撤销该文件的本地修改
 
-git log --pretty=oneline日志一行查看
+git log --pretty=oneline日志一行查看 --abbrev-commit智能的语句
 
-git reset --head HEAD^退回上一个版本（上上版本HEAD^^ 100版本HEAD~100）
+git reset --hard HEAD^退回上一个版本（上上版本HEAD^^ 100版本HEAD~100）也可查看id后值
 
 git reflog查看每一次命令
 
-git tag <tag name>
+git tag <tag name>给当前分支打标签 git tag <tag name> branchID给具体分支打标签 -a指定标签名 -m备注
+git show <tag name>显示标签信息 -d删除
+git push origin <tag name>推送标签到远程	--tags所有标签 远程删除先删除本地 再git push origin :refs/tags/V1.1
+
+忽略特殊文件 创建.gitignore文件写入规则 参考https://github.com/github/gitignore
