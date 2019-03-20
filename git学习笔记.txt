@@ -34,4 +34,16 @@ git pull origin master更新远程版本并合并到本地
 git branch [branch name] git分支创建（查看不加branch name）-d
 切换用 git checkout [branch name] 加-b参数则创建并切换分支
 
-git merge合并分支 在需要合并分支上操作合并分支
+git merge合并分支 在需要合并分支上操作合并分支 git merge dev(in master branch)
+
+git remote -v查看远程库信息 git push origin master推送master分支到远程仓库
+
+git checkout -- <file>撤销该文件的本地修改
+
+git log --pretty=oneline日志一行查看
+
+git reset --head HEAD^退回上一个版本（上上版本HEAD^^ 100版本HEAD~100）
+
+git reflog查看每一次命令
+
+git tag <tag name>
